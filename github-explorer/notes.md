@@ -43,3 +43,7 @@ Para gerar um bundle do hello word vindo de app, tive que fazer algumas alteraç
 (e adicionar em presets "@babel/preset-react")
 
     yarn add babel-loader -D
+
+sempre que forem feitas alterações no arquivo que corresponde ao bundle.js, deve-se re-executar o comando:
+
+    yarn webpack
