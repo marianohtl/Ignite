@@ -47,3 +47,7 @@ Para gerar um bundle do hello word vindo de app, tive que fazer algumas alteraç
 sempre que forem feitas alterações no arquivo que corresponde ao bundle.js, deve-se re-executar o comando:
 
     yarn webpack
+
+- Algumas melhorias no fluxo da aplicação:
+
+  yarn add html-webpack-plugin -D
