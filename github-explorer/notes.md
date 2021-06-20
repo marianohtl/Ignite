@@ -26,3 +26,5 @@ bibliotecas quando este for posto em produção.
 Convertendo um arquivo
 
     yarn babel src/index.js --out-file dist/bundle.js
+
+###
