@@ -27,4 +27,19 @@ Convertendo um arquivo
 
     yarn babel src/index.js --out-file dist/bundle.js
 
-###
+### WebPack
+
+    yarn add webpack-cli webpack-dev-server -D
+
+Podemos importar no html arquivos css, saas , les, json
+Este estipula loaders que dita como cada um destes arquivos devem ser tratados pelo brownser.
+
+Para gerar um bundle do hello word vindo de app, tive que fazer algumas alterações que não são sujeridas na aulo:
+
+    yarn add webpack
+
+    yarn add @babel/preset-react
+
+(e adicionar em presets "@babel/preset-react")
+
+    yarn add babel-loader -D
