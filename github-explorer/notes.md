@@ -59,3 +59,30 @@ yarn add html-webpack-plugin -D
     yarn add webpack-dev-server -D
 
 a aplicação ficará executando no 'localhost/8080'
+
+### Source maps
+
+Tornando a forma de identificar os erros conforme o código original.
+
+# Ambiente de Desenvolvimento e Ambiente d e Produção
+
+Para criar a variável de ambiente seguimos desta forma:
+no unix (seja no MAC ou no Linux)
+
+    NODE_ENV=production yarn webpack
+
+no Windows:
+
+    yarn add cross-env -D
+
+(serve para definir variáveis de ambiente independente do sistema operacional da pessoa)
+
+Agora temos um atalho para rodar os ambientes:
+
+    yarn dev
+
+(roda o ambiente de desenvolvimento)
+
+    yarn build
+
+(roda o ambiente de produção)
