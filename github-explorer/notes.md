@@ -92,3 +92,11 @@ Agora temos um atalho para rodar os ambientes:
 Crie uma regra no webpack para interpretar arquivos do tipo css.
 
     yarn add style-loader css-loader -D
+
+### Configurando o pré-processador SAAS
+
+Configure o webpack e adicione este comando:
+
+    yarn add node-sass -D
+
+    yarn add sass-loader -D
