@@ -48,6 +48,14 @@ sempre que forem feitas alterações no arquivo que corresponde ao bundle.js, de
 
     yarn webpack
 
-- Algumas melhorias no fluxo da aplicação:
+### Algumas melhorias no fluxo da aplicação:
 
-  yarn add html-webpack-plugin -D
+Introduzindo plugin no webpack.
+
+yarn add html-webpack-plugin -D
+
+#### AUTOMATIZANDO O yarn webpack
+
+    yarn add webpack-dev-server -D
+
+a aplicação ficará executando no 'localhost/8080'
