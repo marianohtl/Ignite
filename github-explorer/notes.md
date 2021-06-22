@@ -86,3 +86,9 @@ Agora temos um atalho para rodar os ambientes:
     yarn build
 
 (roda o ambiente de produção)
+
+# Interpretando o arquivos css no projeto
+
+Crie uma regra no webpack para interpretar arquivos do tipo css.
+
+    yarn add style-loader css-loader -D
