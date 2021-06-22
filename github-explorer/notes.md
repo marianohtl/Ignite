@@ -100,3 +100,12 @@ Configure o webpack e adicione este comando:
     yarn add node-sass -D
 
     yarn add sass-loader -D
+
+### Criando Componentes
+
+Componentes são como as "tags" do html.
+Códigos encapsulados com sua estrutura, estilização e funcionalidade.
+
+Função que inicia em maiúscula e retornando um html.
+
+Uma convensão é termos apenas um componente por arquivo.
