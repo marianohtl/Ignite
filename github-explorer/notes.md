@@ -136,3 +136,11 @@ Assim criamos um novo espaço na memória ao invés de alterar algo que já est�
 const [counter, setCounter] = useState(0);
 
 Neste caso acima é como se o useState, criasse uma nova variável counter cada vez que o setCounter é usado.
+
+### Fast Refresh
+
+Quando alteramos qualquer estado de um componente no react usando o yarn webpack, temos um reset da aplicação do zero.
+
+Ao usar o fast refresh conseguimos alterar o código e salvá-lo, mantendo o estado do componente;
+
+        yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh
