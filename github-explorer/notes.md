@@ -115,3 +115,24 @@ Uma convensão é termos apenas um componente por arquivo.
 Passando informações de componentes pais para componentes filhos;
 
 ### Conceito ESTADO
+
+### Imutabilidade
+
+"Preve que uma variável não tem o valor alterado, e sim recebe um novo valor."
+
+users = ['thalitaM', 'LucasG'];
+users.push('novoUser');
+
+Aqui estamos alterando a informação na memória.
+Estamos gerando uma mutação na variável users.
+
+No React, aplicamos o conceito da imutabilidade, sempre criando um novo array. Ex:
+
+novoUsuario = [...users, 'novoUsuario'];
+
+Assim criamos um novo espaço na memória ao invés de alterar algo que já está na memória;
+(Conceito muito usado na programação funcional)
+
+const [counter, setCounter] = useState(0);
+
+Neste caso acima é como se o useState, criasse uma nova variável counter cada vez que o setCounter é usado.
