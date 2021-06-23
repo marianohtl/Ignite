@@ -144,3 +144,34 @@ Quando alteramos qualquer estado de um componente no react usando o yarn webpack
 Ao usar o fast refresh conseguimos alterar o código e salvá-lo, mantendo o estado do componente;
 
         yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh
+
+### Adicionando mais HOOKS no projeto
+
+        useEffect
+
+Estes serve para dispararmos uma função quando algo acontecer na aplicação.
+ex. variável mudou
+queremos ter uma reação
+
+useEffect(() => {
+
+}, [repositories]);
+
+Execute a função, caso a variável seja alterada.
+
+useEffect(() => {
+
+}, []);
+
+Existe uma única execução assim que o componente for exibido em tela.
+
+useEffect(() => {
+
+});
+
+Quando não temos o segundo parâmetro, o useEffect fica em looping.
+Outro caso de looping é quando alteramos o valor da variável utilizada no array, ex:
+
+useEffect(() => {
+setRepository(...) (muda variável)
+}, [repositories]); (altera valor -> chama função )
