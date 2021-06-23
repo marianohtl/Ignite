@@ -109,3 +109,7 @@ Códigos encapsulados com sua estrutura, estilização e funcionalidade.
 Função que inicia em maiúscula e retornando um html.
 
 Uma convensão é termos apenas um componente por arquivo.
+
+### Propriedades
+
+Passando informações de componentes pais para componentes filhos;
