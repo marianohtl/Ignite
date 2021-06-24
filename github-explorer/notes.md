@@ -175,3 +175,48 @@ Outro caso de looping é quando alteramos o valor da variável utilizada no arra
 useEffect(() => {
 setRepository(...) (muda variável)
 }, [repositories]); (altera valor -> chama função )
+
+### Listando com maps
+
+### Typescript
+
+SuperSet, conjunto de funcionalidade que são adicionadas em cima de uma linguagem;
+
+function showWelcomeMessage(user){
+return `Welcome ${user.name}, your e-mail is ${user.email}. Your city is ${user.city} and your state is ${user.state}`;
+}
+
+Tipagem dinámicas permitem qualquer informação disposta em user, e isso pode gerar vários erros;
+
+type User = {
+name:string,
+email:string,
+address:{
+city:string,
+state?:string
+}
+}
+
+function showWelcomeMessage(user: User){
+return `Welcome ${user.name}, your e-mail is ${user.email}. Your city is ${user.city} and your state is ${user.state}`;
+}
+
+typescript histeric type checking (checa os tipos enquanto está se densenvolvendo)
+nos navegadores, este typescript será convertido em js;
+
+Typescript tem inferência de tipos.
+Determinando o tipo das variáveis na maioria dos casos.
+
+### Typescript no React
+
+Typescript consegue tipar as propriedades que os componentes podem receber.
+
+instale o typescript como uma dependência de desenvolvimento
+
+    yarn add typescript -D
+
+    yarn tsc --init
+
+    yarn add @babel/preset-typescript -D
+
+    yarn add @types/react-dom -d
