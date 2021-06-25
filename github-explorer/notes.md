@@ -220,3 +220,5 @@ instale o typescript como uma dependência de desenvolvimento
     yarn add @babel/preset-typescript -D
 
     yarn add @types/react-dom -d
+
+### Alterando Componentes jsx para tsx

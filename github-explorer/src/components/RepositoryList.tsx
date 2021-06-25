@@ -3,17 +3,15 @@ import { RepositoryItem } from "./RepositoryItem";
 import '../styles/repositories.scss';
 
 //https://api.github.com/users/marianohtl/repos
-
+interface Repository{
+  name:string;
+  description:string;
+  html_url: string;
+}
 const repositoryName = 'unform 2';
 
-const repository = {
-  name: 'unform',
-  description: 'Forms in React',
-  link: 'https://github.com/unform/unform'
-}
-
 export function RepositoryList() {
-  const [repositories, setRepositories] = useState([]);
+  const [repositories, setRepositories] = useState<Repository[]>([]);
 
   useEffect(() => {
     fetch('https://api.github.com/users/marianohtl/repos').then(response => response.json()).then(data => setRepositories(data));
