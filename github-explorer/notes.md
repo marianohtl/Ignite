@@ -222,3 +222,5 @@ instale o typescript como uma dependência de desenvolvimento
     yarn add @types/react-dom -d
 
 ### Alterando Componentes jsx para tsx
+
+### Extensão React Devtools
