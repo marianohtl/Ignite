@@ -19,29 +19,29 @@ const id = useMemo(() => () => {return idCounter++} , []);
 
 
   function handleCreateNewTask(props : Task) {
-    props.id = id();
-    props.title = newTaskTitle;
-    tasks.push(props);
-    setTasks(tasks);
+    if(!newTaskTitle) return;
+
+    const newTask = {
+      id : Math.random(),
+      title : newTaskTitle,
+      isComplete : false
+    }
+
+    setTasks(oldState => [...oldState, newTask]);
     setNewTaskTitle('');
   }
 
   function handleToggleTaskCompletion(id: number) {
-    let filtered = tasks.map((task) => {
-    if(task.id == id && task.isComplete != true)
-    {task.isComplete = true} 
-    else if(task.id == id ){
-    task.isComplete = false;
-    }
-    return task});
-    console.log(filtered);
-    setTasks(filtered);
+    const newTasks = tasks.map(task => task.id == id ? {
+      ...task,
+      isComplete: !task.isComplete
+    }: task);
+    setTasks(newTasks);
   }
 
   function handleRemoveTask(id: number) {
-    console.log(id)
-    let filtered = tasks.filter((task) => task.id != id);
-    setTasks(filtered);
+    const filteredTasks = tasks.filter( task => task.id != id);
+    setTasks(filteredTasks);
 }
 
   return (
