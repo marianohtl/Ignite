@@ -1,5 +1,1 @@
-# Ignite
-
-# RocketSeat Study Material
-
-- React Js
+# random pieces of code for study some concepts
